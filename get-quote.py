@@ -1,6 +1,7 @@
 import random
-last = 13
+last = 16
 rnd= random.randint(0, last)
+rnd2= random.randint(0, last)
 def primary():
  print("Keep it logically awesome.")
 
@@ -8,7 +9,8 @@ def primary():
  quotes = f.readlines()
  f.close()
 
- print(quotes[rnd])
+ print(quotes[rnd], end = '')
+ print(quotes[rnd2])
 
 if __name__== "__main__":
   primary()
